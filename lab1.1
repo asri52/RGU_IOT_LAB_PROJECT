@@ -1,0 +1,27 @@
+first_num = input("Enter the first number:")
+first_num = int(first_num)
+
+op = input("Enter the operator:")
+
+second_num = input("Enter the second number:")
+second_num = int(second_num)
+
+unknown = 0
+if op == "+":
+    unknown = first_num + second_num
+elif op == "*":
+    unknown = first_num * second_num
+elif op == "/":
+    if second_num == 0:
+        print("Operation cannot be completed.")
+    else:      
+        unknown = fisrt_num / second_num
+elif op == "-":
+    unknown = fisrt_num - second_num
+elif op == "%":
+    unknown = fisrt_num % second_num
+else:
+    print("Operator unknown.")
+    
+print("%d%s%d=%s"%(first_num, op, second_num, unknown))
+
